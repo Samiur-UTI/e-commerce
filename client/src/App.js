@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // components import
-import DashboardHome from "./components/admin/pages/DashboardHome";
+import Dashboard from "./components/admin/layout/Dashboard";
 import AdminLogin from "./components/admin/pages/AdminLogin";
 import AdminProfile from "./components/admin/pages/AdminProfile";
 
@@ -13,7 +13,7 @@ const app = () => {
       <Router>
         <Switch>
           {/* Admin Routes */}
-          <Route path="/admin" exact component={DashboardHome} />
+          <Route path="/admin" exact component={Dashboard} />
           <Route path="/admin/login" component={AdminLogin} />
           <Route path="/admin/profile" exact component={AdminProfile} />
         </Switch>

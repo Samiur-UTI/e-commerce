@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useWindowDimensions from "../../../hooks/UseDimension";
 import NavigationBar from "./NavigationBar";
+import Drawer from "./Drawer";
 
 const Dashboard = () => {
   const { windowsWidth } = useWindowDimensions();
@@ -11,7 +13,16 @@ const Dashboard = () => {
       return (
         <Container fluid>
           <Row>
-            <Col>EasyCart</Col>
+            <Col className="navBrand-sm">
+              <div>
+                <Link
+                  to="/admin"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  EasyCart
+                </Link>
+              </div>
+            </Col>
           </Row>
         </Container>
       );
@@ -19,11 +30,26 @@ const Dashboard = () => {
       return (
         <Container fluid>
           <Row>
-            <Col lg={2} md={3}>
-              EasyCart
+            <Col lg={2} md={3} className="navBrand">
+              <div>
+                <Link
+                  to="/admin"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  EasyCart
+                </Link>
+              </div>
             </Col>
             <Col lg={10} md={9}>
               <NavigationBar />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={2} md={3}>
+              <Drawer />
+            </Col>
+            <Col lg={10} md={9}>
+              
             </Col>
           </Row>
         </Container>
@@ -31,7 +57,7 @@ const Dashboard = () => {
     }
   };
 
-  return onWidthChange();
+  return <>{onWidthChange()}</>;
 };
 
 export default Dashboard;

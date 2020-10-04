@@ -7,6 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Dashboard Layout Starts */
 .nav-dropdown {
   display: inline;
 }
@@ -25,6 +26,28 @@ body {
 }
 
 .navbar {
-  
   padding-bottom: 0;
 }
+
+.navBrand {
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 3.9375rem;
+}
+.navBrand-sm {
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBrand div {
+  font-size: 1.3rem;
+}
+
+.navBrand-sm div {
+  font-size: 1.3rem;
+}
+
+/* Dashboard Layout Ends */
