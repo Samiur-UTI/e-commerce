@@ -3,8 +3,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // components import
-import AdminDashboard from "./components/admin/pages/AdminDashboard";
+import DashboardHome from "./components/admin/pages/DashboardHome";
 import AdminLogin from "./components/admin/pages/AdminLogin";
+import AdminProfile from "./components/admin/pages/AdminProfile";
 
 const app = () => {
   return (
@@ -12,8 +13,9 @@ const app = () => {
       <Router>
         <Switch>
           {/* Admin Routes */}
-          <Route path="/admin" exact component={AdminDashboard} />
+          <Route path="/admin" exact component={DashboardHome} />
           <Route path="/admin/login" component={AdminLogin} />
+          <Route path="/admin/profile" exact component={AdminProfile} />
         </Switch>
       </Router>
     </div>

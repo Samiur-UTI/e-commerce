@@ -1,8 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 html,
 body {
   border: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-dropdown {
+  display: inline;
+}
+
+.notification .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-toggler-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.notification .dropdown-toggle {
+  padding: 0.90625rem 0;
+}
+
+.navbar {
+  
+  padding-bottom: 0;
 }
