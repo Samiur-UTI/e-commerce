@@ -11,10 +11,10 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="light" variant="light"  className="px-5">
-      {/* <Navbar.Brand as={Link} to="/admin">
+    <Navbar bg="dark" variant="dark">
+      <Navbar.Brand as={Link} to="/admin" className="navbar-brand">
         Easycart
-      </Navbar.Brand> */}
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto d-flex align-items-center">
@@ -25,7 +25,7 @@ const NavigationBar = () => {
                 <FontAwesomeIcon
                   icon={faBell}
                   style={{ fontSize: "1.5rem"}}
-                  className="icon"
+                  
                 />
               </div>
             }

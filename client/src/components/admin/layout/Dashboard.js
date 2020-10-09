@@ -28,31 +28,10 @@ const Dashboard = () => {
       );
     } else {
       return (
-        <Container fluid>
-          <Row>
-            <Col lg={2} md={3} className="navBrand">
-              <div>
-                <Link
-                  to="/admin"
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  EasyCart
-                </Link>
-              </div>
-            </Col>
-            <Col lg={10} md={9}>
-              <NavigationBar />
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={2} md={3}>
-              <Drawer />
-            </Col>
-            <Col lg={10} md={9}>
-              
-            </Col>
-          </Row>
-        </Container>
+        <div>
+          <NavigationBar />
+          <Drawer />
+        </div>
       );
     }
   };
