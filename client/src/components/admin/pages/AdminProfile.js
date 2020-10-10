@@ -1,10 +1,10 @@
 import React from "react";
-import NavigationBar from "../layout/NavigationBar";
+import Dashboard from "../layout/Dashboard";
 
 const AdminProfile = () => {
   return (
     <div>
-      <NavigationBar />
+      <Dashboard />
       AdminProfile
     </div>
   );
